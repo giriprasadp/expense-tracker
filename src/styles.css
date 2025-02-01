@@ -269,15 +269,21 @@ button:hover {
   }
 } */
 
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f7f7f7;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: flex-start; /* Align to top for better mobile experience */
   min-height: 100vh;
+  padding: 1rem; /* Add padding to body */
 }
 
 .App {
@@ -286,9 +292,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 500px;
-  margin: 1rem;
-  box-sizing: border-box; /* Ensure padding is included in width */
+  max-width: 500px; /* Limit maximum width */
+  margin: 0 auto; /* Center the app */
 }
 
 h1 {
@@ -309,8 +314,7 @@ input, select, button {
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 1rem;
-  width: 100%;
-  box-sizing: border-box; /* Ensure padding is included in width */
+  width: 100%; /* Full width */
 }
 
 input:focus, select:focus {
@@ -355,7 +359,6 @@ button:hover {
   border-radius: 5px;
   margin-bottom: 0.5rem;
   background-color: #fafafa;
-  box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .expense-item span {
